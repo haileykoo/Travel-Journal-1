@@ -1,0 +1,65 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+.title {
+    background-color: rgb(78, 75, 69);
+    text-align: center;
+    padding: 0.3em;
+    color: white;
+    margin-top: 0.2em;
+    margin-bottom:0; 
+    font-family: 'Righteous';
+}
+
+.city {
+    position: relative;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 35em;
+    margin-bottom: 0;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.text a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Modak';
+    font-size: 3.15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: rgb(40, 43, 44);
+}
+
+.city:hover .text {
+    display: block;
+}
+
+.city:hover .overlay {
+    opacity: 0.8;
+    transition: 1s;
+  }
+
+@media screen and (min-width: 1200px) {
+    .image {
+        height: 100%;
+    }
+}
